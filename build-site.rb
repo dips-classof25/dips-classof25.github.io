@@ -24,8 +24,8 @@ end
 
 # Generate an HTML file for each section
 messages_by_section.each do |section, messages|
-	Dir.mkdir "_site/#{section}"
-  File.open("_site/#{section}/index.html", 'w') do |file|
+	Dir.mkdir "docs/#{section}"
+  File.open("docs/#{section}/index.html", 'w') do |file|
     file.write(erb.result(binding))
     qrcode = RQRCode::QRCode.new("https://dips-classof25.github.io/#{section}/index.html")
 
