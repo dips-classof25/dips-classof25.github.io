@@ -1,0 +1,97 @@
+/* Reset basic margins and paddings */
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background and font */
+body {
+    background-color: #f3f0e7;
+    font-family: system-ui;
+    color: #333;
+}
+
+main {
+	position: relative;
+	z-index: 999;
+}
+
+.p5Canvas {
+	position: fixed !important;
+}
+
+/* Hide messages initially */
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+/* Animation for each message */
+.message-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+
+/* Main container styling */
+.time-capsule-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff8dc;
+    border: 1px solid rgba;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header section */
+.capsule-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.capsule-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.capsule-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Messages styling */
+.messages-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.message-card {
+    padding: 1rem;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.message-card h2 {
+    font-size: 1.25rem;
+    color: #6b4c35;
+    margin-bottom: 0.5rem;
+}
+
+.message-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.message-card .date {
+    font-size: 0.85rem;
+    color: #7c7c7c;
+    display: block;
+}
