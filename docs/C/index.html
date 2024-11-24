@@ -5,69 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Time Capsule</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    
-    <script src="../scripts/p5.min.js"></script>
-    <script src="../scripts/effect.js"></script>
-    <script src="../scripts/down.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Handlee&family=Indie+Flower&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+	
+	<style>
+		:root {
+			--theme-light: #61FF5B;
+			--theme-dark: #08DD00;
+		}
+	</style>
 </head>
 <body>
 	
     <main>
 			
-	    <div class="time-capsule-container window">
-
-		    <div class="title-bar">
-		            <div class="title-bar-text">
-		              Remembering 12 C.
-		            </div>
-
-				  <div class="title-bar-controls">
-				    <button aria-label="Help"></button>
-				    <button aria-label="Close"></button>
-				  </div>
-		          </div>
-				
+	    <div class="time-capsule-container">
 	        <header class="capsule-header">
 	            <h1>Remembering 12 C.</h1>
-	            <p>Messages from our class, sealed to remember our shared memories and dreams for the future.</p>
+	            <p>notes and memories from friends and classmates.</p>
 	        </header>
 
 	        <section class="messages-section">
-	            
-	                <div class="message-card hidden">
-	                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	                    <span class="date">Name11</span>
-	                </div>
-	            
-	                <div class="message-card hidden">
-	                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	                    <span class="date">Name12</span>
-	                </div>
-	            
+			  		
+				
+				<div class="post-it" style="transform: rotate(4deg);">
+				
+			    
+			      <p>balance journey animate afford youth perfect serenity advance impact growth hunger inspire</p>
+			      <span class="date">Emma Jackson</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(-2deg);">
+				
+			    
+			      <p>enlighten butterfly climate vintage mystery impact leader yesterday youth earnest alright accomplish enrich impress ability discovery feature freedom practical debate hidden unique</p>
+			      <span class="date">Liam Hernandez</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(-5deg);">
+				
+			    
+			      <p>zealous decide justice resume secure creator discovery album earnest society appeal mellow gather decide creator attempt legacy deliver frozen bless accuse accomplish library combine quality charming genuine leader</p>
+			      <span class="date">Ella Garcia</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-2deg);">
+				
+			    
+			      <p>breathe unique gather matter knowledge discovery justice genuine choice genuine explore kneel charming extend excited</p>
+			      <span class="date">Sophia Martinez</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(1deg);">
+				
+			    
+			      <p>notable absence celebrate perfect justice breathe impact accomplish secure profit ancient zero</p>
+			      <span class="date">Charlotte Gonzalez</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(0deg);">
+				
+			    
+			      <p>deliver lonely leader champion perfect classic witness flood superb admire journey journey lively mellow balance practical classic justice abandon instance rescue library thrive balance chance unique</p>
+			      <span class="date">Harper Hernandez</span>
+			    </div>
+			  		
+				
+				<div class="card-type">
+				
+			    
+			      <p>thrive bravery goal balance success fantasy social notable breathe connect fiction improve capture journey example lively lone difficult library butterfly failure fiction weight safety balance mimic option trouble growth capture heroic lucky celebrate zephyr leader chance weight</p>
+			      <span class="date">Ava Wilson</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-4deg);">
+				
+			    
+			      <p>navigate growth perfect ability excited bless library yoga plenty afford serene journey</p>
+			      <span class="date">Mason Williams</span>
+			    </div>
+			  		
+				
+				<div class="card-type">
+				
+			    
+			      <p>excited honor outlook ancient deliver defend serene attempt excited amazing grateful exact ideal perfect mimic zero serene enrich habit discovery impress inspire pleasure exact vintage youth leader creator justice choice option account bother affect enrich serene superb enlighten inspire</p>
+			      <span class="date">Charlotte Hernandez</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(0deg);">
+				
+			    
+			      <p>express fallout promise appeal matter freedom perfect earnest zealous efficient celebrate frozen explore valid distant instance</p>
+			      <span class="date">Liam Rodriguez</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(3deg);">
+				
+			    
+			      <p>explore grateful lone knowledge ability attempt combine yoga creator balance deliver benefit option pleasure climate lonely harmony connect classic create outlook lone heroic academy ashore hero</p>
+			      <span class="date">James Wilson</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(2deg);">
+				
+			    
+			      <p>impact sincere profit demand alright unique vivid fiction knowledge laughter afford amazing affect famous breathe winner leader mysterious yesterday journey yesterday habit impact</p>
+			      <span class="date">Jack Lopez</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(4deg);">
+				
+			    
+			      <p>bother yesterday combine virtue gather virtue display action decide serenity growth laughter leader ideal inquire ancient breathe notable youth pleasure express enrich quality fantasy meaning</p>
+			      <span class="date">Amelia Martin</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(-3deg);">
+				
+			    
+			      <p>vocal genuine success alright fantasy famous growth secure vintage lonely family zephyr serenity hunger earnest gather fantasy chance grateful profit demand intent ability lone chance charming choice</p>
+			      <span class="date">Benjamin Brown</span>
+			    </div>
+			  		
+				
+				<div class="card-type">
+				
+			    
+			      <p>famous justice control alright inspire vocal social major matter vocal freedom deliver family butterfly plenty accomplish justice weight brilliant failure wonder explore connect combine rescue intent capture meaning action accomplish account justice debate greet matter brilliant comfort outlook</p>
+			      <span class="date">Noah Rodriguez</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(0deg);">
+				
+			    
+			      <p>accomplish thrive deliver admire quality youth failure adore ideal fantasy preserve journey defend admire action affect habit extend example earnest combine nature parent</p>
+			      <span class="date">Amelia Brown</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(3deg);">
+				
+			    
+			      <p>ancient winner growth flood justice benefit regret attempt butterfly combine efficient harmony dreamer hero climate comment combine laughter fantasy virtue inquire champion choice bother dreamer mystery capture fable glance dreamer</p>
+			      <span class="date">Samuel Jones</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(-3deg);">
+				
+			    
+			      <p>famous distant climate genuine question mellow automate grateful dreamer choice weight greet breathe witness library trust extend zephyr connect deliver direct hunger journey dreamer zealous</p>
+			      <span class="date">Emma Wilson</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-5deg);">
+				
+			    
+			      <p>goal wonder instance growth matter fantasy affect encourage leader champion kitchen connect intent capture celebrate example obtain</p>
+			      <span class="date">Amelia Rodriguez</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-2deg);">
+				
+			    
+			      <p>outlook balance control comment mimic champion goal suggest connect bother vocal</p>
+			      <span class="date">Lucas Miller</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(2deg);">
+				
+			    
+			      <p>harmony fallout duty ability benefit yoga album option zealous earnest honor excited journey deliver journey brilliant witness deliver advance rescue zero discovery novel grip notable preserve</p>
+			      <span class="date">Harper Moore</span>
+			    </div>
+			  		
+				
+				<div class="card-type">
+				
+			    
+			      <p>fantasy youth preserve failure yesterday afford lone pleasure efficient inspire resume express afford balance matter journey balance celebrate balance family zephyr demand album genuine vintage grateful harmony balance preserve earnest vision capture weight deliver preserve bless instance zephyr innovate yoga</p>
+			      <span class="date">Noah Johnson</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-4deg);">
+				
+			    
+			      <p>vision parent bless decide regret genuine serene obtain youth unique fantasy wonder matter</p>
+			      <span class="date">Liam Thomas</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(4deg);">
+				
+			    
+			      <p>hero breathe accuse climate witness innovate vivid winner deliver trust justice genuine promise legacy perfect meaning meaning ideal growth fantasy</p>
+			      <span class="date">Charlotte Thomas</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(5deg);">
+				
+			    
+			      <p>demand heroic chance combine option butterfly lucky kneel impact album distant accuse breathe direct ashore</p>
+			      <span class="date">Scarlett Miller</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(3deg);">
+				
+			    
+			      <p>account breathe suggest accomplish kneel control justice honest combine create fantasy</p>
+			      <span class="date">Noah Taylor</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(4deg);">
+				
+			    
+			      <p>capture forgive major navigate account excited simplify distant profit knowledge preserve bless safety leader society</p>
+			      <span class="date">Olivia Anderson</span>
+			    </div>
+			  		
+				
+				<div class="card-type">
+				
+			    
+			      <p>mysterious gather famous ability journey kettle deliver explore rescue flood genuine classic balance laughter enlighten direct perfect mystery result thrive serenity serenity debate serenity bless climate distant plenty amazing afford witness creator practical virtue defend superb regret</p>
+			      <span class="date">Lucas Gonzalez</span>
+			    </div>
+			  		
+				
+				<div class="post-it" style="transform: rotate(-5deg);">
+				
+			    
+			      <p>pleasure afford nature comfort connect distant virtue vocal library harmony grip bless fantasy library rescue mellow failure ashore virtue</p>
+			      <span class="date">Amelia Jackson</span>
+			    </div>
+			  		
+				
+				<div class="taped" style="transform: rotate(5deg);">
+				
+			    
+			      <p>kneel breathe admire growth academy amazing novel defend ability balance option adore failure zero major safety fantasy example thrive deliver profit ideal sincere harmony decide simplify resume</p>
+			      <span class="date">Olivia Moore</span>
+			    </div>
+			  
 	        </section>
+		   
+		   <section class="links">
+			   <a href="https://open.spotify.com/playlist/677Cl2ny3YiguR7e0TVxAv" class="s">Spotify</a>
+			   <a href="https://drive.google.com/drive/folders/1krSwRCdWHPKC8hsOzD1nJWHlHNPnm2k6" class="p">Photo Gallery</a>
+		   </section>
+		   
+		   <section class="end-note">
+
+  		   Here's to the class of 2025.<br>
+		   <img src="../images/1.gif" height="25px">
+		   <img src="../images/2.gif" height="25px">
+		   </section>
 	    </div>
-	    
-	    
-	    <div class="time-capsule-container window">
-
-		    <div class="title-bar">
-		            <div class="title-bar-text">
-		              Image Gallery
-		            </div>
-
-				  <div class="title-bar-controls">
-				    <button aria-label="Help"></button>
-				    <button aria-label="Close"></button>
-				  </div>
-		          </div>
-				
-				
-				<iframe src='https://drive.google.com/embeddedfolderview?id=1krSwRCdWHPKC8hsOzD1nJWHlHNPnm2k6#grid' style="width:100%; height:600px; border:0;"></iframe>
-	        
-	    </div>
-
-	   </main>
 </body>
 </html>

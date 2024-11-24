@@ -7,7 +7,8 @@ body,html {
 
 /* Set body background and font */
 body {
-    background-color: #f3f0e7;
+    background-color: #fff;
+    background-image: repeating-linear-gradient(#fff, #eee 8px, #fff 16px);
     font-family: system-ui;
     color: #333;
 }
@@ -17,51 +18,45 @@ main {
 	z-index: 999;
 }
 
-.p5Canvas {
-	position: fixed !important;
-}
-
-/* Hide messages initially */
-.hidden {
-    opacity: 0;
-    transform: translateY(-50px);
-}
-
-/* Animation for each message */
-.message-card.show {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 1.5s ease-out, transform 1s ease-out;
-}
-
 
 /* Main container styling */
 .time-capsule-container {
     width: 90%;
     max-width: 700px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 2rem;
-    background-color: #fff8dc;
-    border: 1px solid rgba;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
     overflow: hidden;
+    background-color: #fff;
+    background-image: url("../images/background.png");
+    background-size: contain;
 }
 
 /* Header section */
 .capsule-header {
     text-align: center;
     margin-bottom: 1.5rem;
+    background-image: linear-gradient(0deg, #FFFFFF 0%, var(--theme-light) 100%);
+    font-family: 'Instrument Serif';
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    width: 100%;
 }
 
 .capsule-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-size: 60px;
+    margin: 0;
+    color: black;
 }
 
 .capsule-header p {
-    font-size: 1rem;
-    color: #555;
+    font-style: italic;
+    opacity: 0.4;
+    font-size: 30px;
 }
 
 /* Messages styling */
@@ -71,27 +66,180 @@ main {
     gap: 1.5rem;
 }
 
-.message-card {
-    padding: 1rem;
-    border-radius: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
+.post-it {
+    margin: auto;
+    width: 275px;
+    height: 200px;
+    padding: 20px;
+    transform: rotate(-4deg);
+    background-image: linear-gradient(180deg, #FFFFDA 0%, #FFFFD4 5%, #F9F8C5 22%, #FFFEC8 26%, #FDFA8B 100%);
+    box-shadow: 0 20px 10px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    font-family: 'Indie Flower';
+    line-height: 28px;
+    font-size: 24px;
 }
 
-.message-card h2 {
-    font-size: 1.25rem;
-    color: #6b4c35;
+.post-it p {
+    color: #005A9E;
     margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
-.message-card p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.message-card .date {
-    font-size: 0.85rem;
-    color: #7c7c7c;
+.post-it .date {
+    color: #9E0000;
     display: block;
+    text-align: right;
+}
+
+.post-it .date::before {
+	content: "- ";
+}
+/* --- */
+.taped::before {
+	width: 200px;
+	height: 40px;
+	display: block;
+	content: "";
+	margin-top: -40px;
+	margin-left: 75px;
+	transform: rotate(-2deg);
+	background-color: rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.taped {
+    margin: auto;
+    margin-top: 40px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    transform: rotate(3deg);
+    background-color: #FFFBF1;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.50);
+    font-family: 'Handlee';
+    line-height: 28px;
+    font-size: 24px;
+    color: #3E3E3E;
+}
+
+.taped p {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.taped .date {
+    display: block;
+    text-align: right;
+}
+
+.taped .date::before {
+	content: "- ";
+}
+/* --- */
+.card-type::before {
+	width: 39px;
+	height: 56px;
+	display: block;
+	content: "";
+	background-image: url("../images/pin.png");
+	background-size: contain;
+	margin-top: -28px;
+	margin-left: 360px;
+}
+
+.card-type {
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    transform: rotate(-4deg);
+    background-color: #fff;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.50);
+    font-family: 'Cormorant Garamond';
+    line-height: 22px;
+    font-size: 18px;
+    color: #3E3E3E;
+    text-align: center;
+}
+
+.card-type p {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.card-type .date {
+    display: block;
+    color: #B45050;
+}
+
+/* links */
+.links {
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.links a {
+	font-family: Lucida Grande;
+	font-size: 18px;
+	color: #000000;
+	letter-spacing: 0;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25);border-radius: 20px;
+	width: 230px;
+	height: 40px;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.links a:hover {
+	filter: brightness(0.9);
+}
+
+.links .p {
+	background: #ADEAFF;
+	box-shadow: 0 17px 8px -13px rgba(0,190,255,0.50), 0 9px 8px 0 rgba(0,0,0,0.50), inset 0 0 2px 2px rgba(255,255,255,0.50), inset 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 19px 14px 0 rgba(0,128,172,0.50);
+}
+
+.links .s {	
+	background: #B8FFAD;
+	box-shadow: 0 17px 8px -13px rgba(49,255,0,0.50), 0 9px 8px 0 rgba(0,0,0,0.50), inset 0 0 2px 2px rgba(255,255,255,0.50), inset 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 19px 14px 0 rgba(0,172,26,0.50);
+}
+
+.links a::before {
+	content: "";
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.19) 100%);
+	border-radius: 10px;
+	height: 20px;
+	width: 210px;
+	display: block;
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+
+/* Endnote */
+.end-note {
+	width: 100%;
+	text-align: center;
+	padding: 2rem;
+	line-height: 72px;
+	font-family: 'Instrument Serif';
+	font-size: 40px;
+	color: black;
+	background-image: linear-gradient(180deg, #FFFFFF 50%, var(--theme-dark) 100%);
+	margin-bottom: -2rem;
+	margin-left: -2rem;
+	margin-top: 2rem;
+}
+
+.end-note img {
+	margin-top: -2rem;
 }
